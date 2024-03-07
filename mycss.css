@@ -1,23 +1,36 @@
-@font-face {  font-family: "Libre Bodoni";
-  src: url("../assets/fonts/LibreBodoni-Regular.ttf");}
+@font-face {
+  font-family: "Libre Bodoni";
+  src: url("../assets/fonts/LibreBodoni-Regular.ttf");
+}
+
 * {
-  box-sizing: border-box;}
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   padding: 0;
   color: #303846;
-  font: 16px/1.5 "Fira Sans", sans-serif;;
-  background: white;}
+  font: 16px/1.5 "Fira Sans", sans-serif;
+  background: white;
+}
 
+.mainpic {
+float: left;
+margin-left: 100;
+}
 
 img { 
 float: left;
 margin-left: 100;}
 
+.STEAM {
+  max-width: 100%;
+  float: none;
+}
+
 h2 {
-  padding-right: 15px; 
-  padding-left: 15px;
+  padding: 0 15px;
   font-size: 2em;
   text-align: left;
   color: black;
@@ -29,11 +42,11 @@ h2 {
 
 .container {
   text-align: center;
-  padding-bottom: 0%;
+  padding-bottom: 0;
 }
 
 .column-4 {
-  width: 23%;
+  width: 100%;
 }
 
 .column-container {
@@ -47,12 +60,12 @@ h2 {
   box-shadow: 0 -200px 100px -120px #4D5BC6 inset;
   color: #fff;
   font-size: 2.5em;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   padding: 30px;
   transition: 5s;
   width: 100%;
-  margin-bottom: 0%;
+  margin-bottom: 0;
   background-position: 0 0;
   border-radius: 30px;
   border: 10px solid white;
@@ -63,16 +76,17 @@ h2 {
   50% {
     background: #09125B;
     box-shadow: 0 -200px 100px -100px #7648C5 inset;
-  }}
+  }
+}
 
 .welcome img {
-  margin-bottom: 0.5em;
   margin-bottom: 1em;
 }
 
 .card h3 {
   margin-top: 0;
-  font-size: 1.5em;}
+  font-size: 1.5em;
+}
 
 span.bold {
   font-weight: bold;
@@ -108,17 +122,18 @@ span.bold {
 }
 
 .column-3:hover {
-  position: relative; 
   top: -10px;
   left: -5px;
   color: black;
-  cursor: not-allowed;}
+  cursor: not-allowed;
+}
 
 .column-3 h3 {
   font-weight: normal;
   margin-top: 0;
   margin-right: 0.2em;
-  font-size: 1.6em;}
+  font-size: 1.6em;
+}
 
 .ps2 {
   background: red;
@@ -145,15 +160,12 @@ span.bold {
 
 .warning {
   font-size: 1em;
-  position: relative;
   color: white;
-  margin: 0 auto;
   text-align: center;
-  vertical-align: center; 
-  line-height: 65px; 
+  line-height: 65px;
   margin-top: 2.5em;
   background: black;
-  width: 50%;
+  width: 100%;
   height: 2.5em;
 }
 
@@ -211,14 +223,12 @@ span.bold {
 
 a {
   color: white;
-  padding: 2px 1px 0;
+  padding: 0.2em 0.1em 0;
 }
 
 .div31 {
-  padding-left: 10em;
+  padding: 0 10% 6% 10%;
   color: white;
-  padding-bottom: 6%;
-  padding-right: 10em;
 }
 
 .div31 h3 {
@@ -232,7 +242,8 @@ a {
 }
 
 .div4 {
-  margin-top: 2em;
+  margin-top: 3em;
+  margin-bottom: 3em;
 }
 
 .div32 {
@@ -240,14 +251,20 @@ a {
   padding-bottom: 2em;
 }
 
-.div32 h3{
+.div32 img{
+  float: left;
+}
+
+.div32 h3 {
   padding-left: 17em;
   font-size: 1em;
 }
 
 .btn2 {
-   width: 30%;
-  float: right;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: -3%;
   font-size: 0.5em;
 }
 
@@ -257,17 +274,23 @@ a {
 }
 
 .OLED {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding: 3em 0;
   margin-top: -1.2em;
   color: white;
   background: linear-gradient(#4D5BC6, #09125B);
 }
 
 .OLED h3 {
+  width: 100%;
   text-align: center;
   font-size: 3em;
   font-weight: bold;
+}
+
+.fOLED {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .h21 {
@@ -277,12 +300,11 @@ a {
 }
 
 .h21p {
-  float: inline-start;
   width: 25%;
   color: white;
   font-size: 1.2em;
-  padding-left: 5em;
-  padding-top: 10em;
+  padding-left: -8%;
+  padding-top: 5%;
 }
 
 .h22 {
@@ -292,12 +314,11 @@ a {
 }
 
 .h22p {
-  float: inline-end;
   width: 25%;
   color: white;
   font-size: 1.2em;
-  padding-right: 4em;
-  padding-top: 8em;
+  padding-right: 4%;
+  padding-top: 5%;
 }
 
 .h23 {
@@ -310,48 +331,46 @@ a {
   width: 50%;
   color: white;
   font-size: 1.2em;
-  padding-left: 13em;
-  margin-top: 5em;
+  padding-left: 9%;
+  margin-top: 2em;
+  margin-right: 5em;
   padding-bottom: 3em;
 }
 
 .himg {
   float: right;
-  margin-top: -21em;
+  margin-top: -23em;
 }
 
 .OLED video {
-  margin-left: 3em;
+  margin-left: 3%;
 }
 
 .column-1 {
   color: white;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin: 0 3% 0 3%;
   width: 26%;
   height: 50%;
-  text-align: center; 
+  text-align: center;
   position: relative;
-  top: 0px;
-  left: 0px;
 }
 
 .column-1 h3 {
+  margin: 10% 0 10% 7%;
   color: white;
   font-size: 1.2em;
   font-weight: bold;
-  padding-top: 12em;
-  padding-left: 1em;
+ margin-top: 1.5em;
 }
 
 .column-1 p {
+  margin: 0 2% 0 2%;
   font-size: 0.9em;
-  padding-left: 1em;
 }
 
 .div4 h3 {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1.5%;
+  margin-bottom: 2%;
   margin-left: 25em;
   font-size: 2em;
 }
@@ -366,28 +385,32 @@ a {
   font-weight: normal;
 }
 
+.columndiv {
+  margin-top: 5em;
+  width: 100%;
+  height: 300hv;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .column-2 {
   margin-bottom: 2em;
-  margin-left: 6em;
+  margin-left: 6%;
   margin-right: 2em;
-  margin-top: 2em;
   width: 25%;
   text-align: center; 
   position: relative;
   background: white;
-  top: 0px;
-  left: 0px;
-  padding: 0 0 0 0;
-  transition: 0.8s;
-  min-height: 200px;
+
 }
 
 .column-2 h3 {
-  font-size: 2em;
+font-size: 2em;
 }
 
 .column-2 p {
-  font-size: 1em;
+font-size: 1em;
 }
 
 form {
