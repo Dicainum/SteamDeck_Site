@@ -369,7 +369,7 @@ a {
 }
 
 .column-1 img {
-  margin: 0 15% 0 13%;
+  margin: 0 3% 0 10%;
 }
 
 .div4 h3 {
@@ -553,6 +553,9 @@ footer h3 {
     border-bottom: 0.5px solid white;
 }
 
+.line2 {
+    border-bottom: 0.5px solid black;
+}
 .line2 {
     border-bottom: 0.5px solid black;
 }
